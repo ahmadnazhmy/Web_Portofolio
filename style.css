@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Monserrat", sans-serif;
     color: black;
 }
 
@@ -15,22 +14,32 @@ h1 {
     text-align: center;
 }
 
+h1, h2, h3, h4, span {
+    font-family: "Playfair Display", serif;
+}
+
+p, li {
+    font-family: "Nunito Sans", sans-serif;
+}
+
 /*header*/
 
 header {
-    background-color: white;
+    background-color: #202b64;
     width: 100%;
     display: flex;
     position: fixed;
-    border-bottom: 2px solid #e7e7e7;
+    z-index: 1000;
 }
 
 header h3 {
+    color: white;
     padding: 20px;
     margin-right: auto;
 }
 
 header li {
+    
     display: inline; 
     padding: 20px;
     float: left;
@@ -41,6 +50,7 @@ header li {
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
 }
 
@@ -53,7 +63,6 @@ a:hover {
 #home {
     height: 100vh;
     border: 1px solid #e7e7e7;
-    
 }
 
 .home-main-container {
@@ -95,15 +104,21 @@ a:hover {
 
 .about-all-container {
     padding: 30px;
-    gap: 150px;
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    justify-content: center;
 }
 
 .about-container {
     width: 500px;
+    border: 1px solid #e7e7e7;
+    background-color: white;
+    padding: 20px;
 }
 
+.about-container h3 {
+    text-align: center;
+}
 .profile-photo-container {
     display: flex;
     justify-content: center;
@@ -112,6 +127,7 @@ a:hover {
 
 .profile-photo-container img {
     width: 200px;
+    border: 10px solid #e7e7e7;
 }   
 
 .school {
@@ -144,6 +160,8 @@ a:hover {
 .portofolio-grid {
     width: 300px;
     padding: 15px;
+    border: 1px solid #e7e7e7;
+    background-color: white;
 }
 
 .portofolio-grid img{
@@ -203,7 +221,7 @@ a:hover {
 
 /*footer*/
 footer {
-    background-color: white;
+    background-color: #202b64;
     width: 100%;
     border-top: 2px solid #e7e7e7;
     padding-top: 20px;
@@ -212,6 +230,7 @@ footer {
 
 footer p {
     text-align: center;
+    color: white;
 
 }
 
@@ -233,7 +252,7 @@ footer p {
 }
 
 .copyright {
-    border-top: 2px solid #e7e7e7;
     padding: 10px
 }
+
 
